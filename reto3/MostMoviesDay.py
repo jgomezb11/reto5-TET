@@ -8,7 +8,7 @@ class MRMostMoviesDay(MRJob):
         yield date, 1
 
     def reducer(self, date, counts):
-        yield date, sum(counts)
+        yield None, (date, sum(counts))
 
     def reducer_find_max_day(self, _, date_count_pairs):
         max_day = max(date_count_pairs, key=lambda x: x[1])
