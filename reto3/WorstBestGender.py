@@ -11,7 +11,7 @@ class MRBestWorstMovieByGenre(MRJob):
         ratings_list = list(ratings)
         if ratings_list:
             avg_rating = sum(ratings_list) / len(ratings_list)
-            yield keys[0], (keys[1], avg_rating)
+            yield None, (keys[0], (keys[1], avg_rating))
 
     def reducer_find_best_worst(self, genre, movie_avg_ratings):
         best_movie = max(movie_avg_ratings, key=lambda x: x[1])
