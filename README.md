@@ -55,6 +55,7 @@ aws s3api put-object --bucket bucket-reto5-julian --key scripts/
 ![bucket](https://raw.githubusercontent.com/jgomezb11/reto5-TET/main/static/creacion_bucket.png)
 
 Creamos un security group:
+
 ![sg](https://raw.githubusercontent.com/jgomezb11/reto5-TET/main/static/creacion_sg.png)
 
 Le creamos un ingress de la siguiente forma:
