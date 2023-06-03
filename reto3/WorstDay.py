@@ -8,7 +8,11 @@ class MRWorstRatingDay(MRJob):
         yield date, float(rating)
 
     def reducer(self, date, ratings):
-        yield None, (date, sum(ratings) / len(list(ratings)))
+        ratings_list = list(ratings)
+        if ratings_list:
+            yield None, (date, sum(ratings_list) / len(ratings_list))
+        else:
+            yield None, (date, 0)
 
     def reducer_find_worst_day(self, _, date_avg_rating_pairs):
         worst_day = min(date_avg_rating_pairs, key=lambda x: x[1])
