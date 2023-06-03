@@ -8,11 +8,13 @@ class MRBestRatingDay(MRJob):
         yield date, float(rating)
 
     def reducer(self, date, ratings):
-        yield date, sum(ratings) / len(list(ratings))
+        ratings_list = list(ratings)
+        if len(ratings_list) != 0:
+            yield None, (date, sum(ratings_list) / len(ratings_list))
 
     def reducer_find_best_day(self, _, date_avg_rating_pairs):
-        worst_day = max(date_avg_rating_pairs, key=lambda x: x[1])
-        yield 'Best rating day', worst_day
+        best_day = max(date_avg_rating_pairs, key=lambda x: x[1])
+        yield 'Best rating day', best_day
 
     def steps(self):
         return [
