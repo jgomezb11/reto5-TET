@@ -12,7 +12,7 @@ class MRLeastMoviesDay(MRJob):
 
     def reducer_find_min_day(self, _, date_count_pairs):
         min_day = min(date_count_pairs, key=lambda x: x[1])
-        yield 'Least movies day', min
+        yield 'Least movies day', min_day
 
     def steps(self):
         return [
