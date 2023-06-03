@@ -9,7 +9,7 @@ class MRBlackDay(MRJob):
 
     def reducer(self, date, prices):
         min_price = min(prices)
-        yield date, min_price
+        yield None, (date, min_price)
 
     def reducer_find_black_day(self, _, date_minprice_pairs):
         black_day = min(date_minprice_pairs, key=lambda x: x[1])
