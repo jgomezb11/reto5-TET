@@ -13,7 +13,7 @@
 ## Datos del estudiante
 ---
 
--   **Nombre del estudiante:** Julian Gámez Benítez.
+-   **Nombre del estudiante:** Julian Gomez Benítez.
 -  **Correo electrónico del estudiante:** __[jgomezb11@eafit.edu.co](mailto:jgomezb11@eafit.edu.co)__.
 
 ## Descripción y alcance del proyecto
