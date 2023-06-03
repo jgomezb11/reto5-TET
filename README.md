@@ -13,8 +13,6 @@
 ## Datos del estudiante
 ---
 
--   **Nombre del estudiante:** Juan Pablo Rincon Usma.
--  **Correo electrónico del estudiante:** __[jprinconu@eafit.edu.co](mailto:jprinconu@eafit.edu.co)__.
 -   **Nombre del estudiante:** Julian Gámez Benítez.
 -  **Correo electrónico del estudiante:** __[jgomezb11@eafit.edu.co](mailto:jgomezb11@eafit.edu.co)__.
 
