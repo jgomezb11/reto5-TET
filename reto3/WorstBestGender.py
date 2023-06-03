@@ -8,7 +8,9 @@ class MRBestWorstMovieByGenre(MRJob):
         yield (genre, movie), float(rating)
 
     def reducer(self, keys, ratings):
-        avg_rating = sum(ratings) / len(list(ratings))
+    ratings_list = list(ratings)
+    if ratings_list:
+        avg_rating = sum(ratings_list) / len(ratings_list)
         yield keys[0], (keys[1], avg_rating)
 
     def reducer_find_best_worst(self, genre, movie_avg_ratings):
