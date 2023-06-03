@@ -196,4 +196,4 @@ En esta seccion se presenta el numero del reto, como se corre y el resultado que
 ## Referencias
 
 [CLI Installation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-[EMR Cluster creation]("https://thecodinginterface.com/blog/create-aws-emr-with-aws-cli/")
+[EMR Cluster creation](https://thecodinginterface.com/blog/create-aws-emr-with-aws-cli/)
